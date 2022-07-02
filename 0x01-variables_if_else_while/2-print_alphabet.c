@@ -1,30 +1,19 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - Prints all possible different combinations
- *of two digits and separates them with a ','
- *
- * Return: 0 if no hikky
+ * main - display a - z
+ * Return: 0 if there is no hikky
  */
 int main(void)
 {
-	int n;
-	int i;
+	char az;
 
-	for (n = 0 ; n < 9 ; n++)
+	for (az = 'a'; az <= 'z'; az++)
 	{
-		i = n + 1;
-		do {
-			putchar('0' + n);
-			putchar('0' + i);
-			if (n < 8)
-			{
-				putchar(',');
-				putchar(32);
-			}
-			i++;
-		} while (i < 10);
+		putchar(az);
 	}
 	putchar('\n');
 	return (0);
