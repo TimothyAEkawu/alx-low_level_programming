@@ -1,25 +1,25 @@
 
-
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - display a - z
- * Return: 0 if there is no hikky
+ * main - Entry point
+ * Print alphabets
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char az;
-	char AZ;
+	char ch = 'a';
+	char ch2 = 'A';
 
-	for (az = 'a'; az <= 'z'; az++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(az);
+		putchar(ch);
 	}
-	for (AZ = 'A'; AZ <= 'Z'; AZ++)
+	for (ch2 = 'A'; ch2 <= 'Z'; ch2++)
 	{
-		putchar(AZ);
+		putchar(ch2);
 	}
 	putchar('\n');
 	return (0);
-}
+} 
