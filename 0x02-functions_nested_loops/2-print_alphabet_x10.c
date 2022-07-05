@@ -1,12 +1,23 @@
 #include "main.h"
 
 /**
- *  * main - check the code
- *   *
- *    * Return: Always 0.
- *     */
-int main(void)
+ *  print_alphabet_x10 - Entry Point
+ *  Return:0
+ */
+void print_alphabet_x10(void)
 {
-	    print_alphabet();
-	        return (0);
+	int i = 0;
+
+	while (i < 10)
+	{
+		int alp = 0;
+
+		while (alp < 26)
+		{
+			_putchar(alp + 97);
+			alp++;
+		}
+		i++;
+		_putchar('\n');
+	}
 }
